@@ -1,0 +1,5 @@
+-- local useOptimizeClass = false  --优化的
+-- CLASS = function(className,classParent)
+--     local cls = nil
+--     cls = class2(className,)
+-- end
