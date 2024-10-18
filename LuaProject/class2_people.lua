@@ -11,7 +11,7 @@ function People:Say()
 end
 
 
-Men =  class2("People",People)
+Men =  class2("Men",People)
 
 function Men:ctor(name,age)
     People.ctor(self,name,age)
