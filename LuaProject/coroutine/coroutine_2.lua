@@ -50,6 +50,6 @@ end coroutine.running() thread:XXXXXX01 bIsMain:true
 总结:
 执行完这行 local success1,param1_1,param2_1,param3_1 = coroutine.resume(co, "resume param1","resume param2","resume param3") 代码后做了如下几件事:
 (1)恢复了foo的执行，并传入了三个参数
-(2)传入的三个参数以此对yieldReturn1,yieldReturn2,yieldReturn3赋值
+(2)传入的三个参数以此对yieldReturn1,yieldReturn2,yieldReturn3赋值(resume的参数就是,yield的返回值)
 (3)之后的代码继续执行,由于没有yield语句,所以foo函数的返回值"foo return1","foo return2","foo return3",给了param1_1,param2_1,param3_1赋值
 ]]--
